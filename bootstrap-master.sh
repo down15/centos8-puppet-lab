@@ -28,8 +28,6 @@ else
     sudo firewall-cmd --reload
 
     # Puppet module installs
-    #sudo /opt/puppetlabs/bin/puppet module install puppetlabs-ntp
-    #sudo /opt/puppetlabs/bin/puppet module install puppetlabs-git
     sudo /opt/puppetlabs/bin/puppet module install puppetlabs-motd
 
     # Soft link site.pp from vagrant folder to the puppetmaster
