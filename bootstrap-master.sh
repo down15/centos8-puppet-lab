@@ -43,7 +43,6 @@ else
 
     cat > /etc/puppetlabs/puppet/autosign.conf << EOF
 *.test.lab
-*.local
 EOF
 
     # Start the puppetserver and enable via systemd
