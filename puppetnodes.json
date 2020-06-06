@@ -1,0 +1,31 @@
+{
+    "nodes": {
+        "puppetmaster.test.lab": {
+            ":ip": "192.168.69.5",
+            "ports": [
+                {
+                    ":host": 8140,
+                    ":guest": 8140,
+                    ":id": "tcp80"
+                }
+            ],
+            ":memory": 4096,
+            ":cpus": 2,
+            ":bootstrap": "bootstrap-master.sh"
+        },
+        "puppet-node-01.test.lab": {
+            ":ip": "192.168.69.10",
+            "ports": [],
+            ":memory": 4096,
+            ":cpus": 2,
+            ":bootstrap": "bootstrap-node.sh"
+        },
+        "puppet-node-02.test.lab": {
+            ":ip": "192.168.69.20",
+            "ports": [],
+            ":memory": 4096,
+            ":cpus": 2,
+            ":bootstrap": "bootstrap-node.sh"
+        }
+    }
+}
