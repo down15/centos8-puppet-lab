@@ -2,7 +2,6 @@
 
 echo "Bootstrapping Puppet Node"
 
-
 if ps aux | grep "puppet" | grep -v grep 2> /dev/null
 then
  echo "Puppet Master is already installed. Exiting..."
